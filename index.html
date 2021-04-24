@@ -1,0 +1,27 @@
+---
+# Front matter
+---
+<html lang="en-US">
+ <body>
+ 
+    <ul class="list  list--repos">
+        <li class="item  item--repo">
+            <a href="#">Team Hydra Hacking Docs & Resources</a>
+        </li>
+    </ul>
+ 
+ </body>
+</html>
+<ul class="portfolio">
+    {% for repo in site.github.public_repositories limit:28 %}
+ 
+        {% if repo.fork != true %}
+            <li class="repo">
+               
+                <a href="{{ repo.homepage }}">{{ repo.name }}</a>
+             
+            </li>
+        {% endif %}
+ 
+    {% 
+  <link href="./css/styles.css" media="all" rel="stylesheet">
