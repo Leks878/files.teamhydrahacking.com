@@ -1,0 +1,8 @@
+ 
+Find another privilege escalation, from non-Admin Medium IL to Admin running in High IL.
+
+Hint #1: You need local admin password found in Credentials module
+Hint #2: You don't need to create any custom tool
+Hint #3: It's not anyhow complex attack. It's the opposite - super easy. Just look at a process list...
+
+Good luck!

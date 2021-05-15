@@ -1,0 +1,49 @@
+#PHISING ATTACK
+
+<need php as prior knowledge> </>
+
+setoolkit. 
+
+select social engineernig attack. 
+
+credential harvestor
+
+site cloner 
+
+<type the url>
+
+################################################
+
+DOS
+
+###############################################
+
+When a single attacker attacks a single system or server. It is known as DoS Attack. 
+
+DDoS: Distributed Denial of service. 
+
+MAny attackers tries to attakc on a single server or a system. 
+
+
+http://hackthesite.org
+http://zero.webappsecurity.com
+http://www.hackertest.net
+https://pwn0.com
+http://smashthestack.org
+http://pwnable.kr 
+https://picoctf.com
+https://microcorruption.com/login
+http://reversing.kr
+http://hax.tor.hu
+https://w3challs.com
+https://pwn0.com
+http://www.smashthestack.org
+http://ringzer0team.com
+http://www.hellboundhackers.org
+http://www.overthewire.org/wargames
+http://counterhack.net/Counter_Hack/Challenges.html
+http://www.hackthissite.org
+http://root-me.org
+extremehacking.org/hacklist.txt
+
+

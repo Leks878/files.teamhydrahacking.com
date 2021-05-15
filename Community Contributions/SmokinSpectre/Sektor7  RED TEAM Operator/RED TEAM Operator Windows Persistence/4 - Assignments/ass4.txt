@@ -1,0 +1,8 @@
+Difficulty: HIGH
+
+Recreate Darkpulsar(https://securelist.com/darkpulsar/88199/) persistence (EquationGroup tool)
+
+Hint #1: check Telephony Service Provider documentation(https://docs.microsoft.com/en-us/windows/win32/tapi/microsoft-telephony-overview). Focus on TAPI 2.x (not 3.x)
+Hint #2: set TapiSrv and Rasman services to AUTOSTART
+Hint #3: don't implement privilege escalation by abusing SeImpersonate token privilege of TapiSrv. For the exercise just change TapiSrv user from NETWORK SERVICE to SYSTEM in service configuration.
+ 

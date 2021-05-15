@@ -1,0 +1,4 @@
+ 
+Difficulty: LOW
+
+Find another COM hijackable DLL and create COM hijacking persistence in a course VM

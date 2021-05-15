@@ -1,0 +1,70 @@
+Firewall (only one feature, firewall never blocks a website, either it will allow a port, or disallow a port) 
+
+IDS (INtrusion Detection SYstem) : A log, IR team montiors the traffic, rules were generated accordingly.
+
+IPS (Intrusion Prevention System): Capability of logging, rules can be generated automatically.  Next Generation firewall.
+
+Firewall Architecture:
+
+Bastion Host:refer to 2Bastion.jpg
+ 
+ScreentSubnet: Refer to 3Subnet.jpg (DMZ)
+
+Multihome: Refer to 4multi.jpg
+
+
+Firewall Types: Refer to firewall type.jpg
+
+
+Packet Filter Firewall: Refer to 6packet.jpg (OPerates at Network Layer)
+
+
+Circuit Level Gateways: Refer to 7circuit.jpg (OPerates at Session Layer of OSI Model)
+
+Application Level Gateways: Refer to 8application.jpg (Operates at Application Layer of OSI Model)
+
+Stateful Multilayer Packet inspection firewall: Refer to 9stateful.jpg (Operates at Network Layer of OSI model)
+
+OSI:
+refer to 
+tenosi.jpeg
+
+
+Cryptography
+
+conversion of data, into a scrambled code, that is encrypted and send accross public or private network.
+
+2 types:
+
+Symmetric and Assymetric
+
+Symmetric: Uses same key for both encryption and Decryption
+
+Assymetric: Uses public and private key encryption.
+
+DES: Data Encryption Standard. 
+
+symetric Key , 56 bit key
+
+AES : Advance Encryption STandard
+
+Symmetric Key Encryption: 128 bit:
+
+RSA: Rivesh, shammir, Addleman
+
+Assymetric Key Encryption, Uses Prime number for factorization:
+
+MD: Message Digest:
+
+128 to 256 bit length key size. MD5 most popular
+
+successor                                                           telnet ---> SSH, ssl ---> tls ,ftp --> sftp
+SHA1  - 160 bit digest. it resembles like MD5.
+
+SHA2  - 256 bit digest.  
+
+SHA3  - 264 bit digest. 
+
+PKI:  refer to pki.jpg
+
+

@@ -1,0 +1,5 @@
+Find new victim application prone to DLL hijacking and develop a DLL for it.
+
+Tip: don't target Windows native binaries/apps. Focus on 3rd party software (ie. C:\RTO\Tools)
+
+Note: check README.txt and COMPILING.txt in DLL-hijack folder to get more information about how to modify the templates.

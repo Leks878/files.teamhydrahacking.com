@@ -1,0 +1,99 @@
+################################################################################################################################################################
+Password And Cracking Techniques
+################################################################################################################################################################
+
+Not efficient now a days. 
+
+
+Dictionary Based:  
+
+Bruteforce Attack:  Takes more times compared to other techniques.
+
+Hybrid Attack:  
+
+Sylabble Attack: Combination of Bruteforce + DIctionary
+
+Rule based Attack: Based on password policies.
+
+https://howsecureismypassword.net/
+
+
+LM Hash: 14 chars, 
+
+LTLM Hash: Network LAN Manager Hash
+
+if USer ID is 500 its an administrator accout,
+              501 its a guest account
+             >501 standard Account.
+
+NT Authority/System , not having UID, coz it is not a USER
+
+A security in SAM FILE , CUD Ops not possible.
+
+Path : c:\windows\system32\config\SAM
+
+Linux: /etc/shadow
+
+
+################################################################################################################################################################
+
+MALWARE
+
+################################################################################################################################################################
+
+Virus                     Worm                       Trojan                         Adware                         Spyware                     Ransomeware
+
+                                                     (Horse)
+################################################################################################################################################################
+
+1.It need               1. Worm are               1. payload on a software.      1. Advertisement           1. Spy + Software.            1.   Demand money           
+                          
+support of some file       self replicating.                                       + Software.                (keylogger, webcamcapture)      to remove malware.
+
+or service to move. 
+
+
+2. It deletes file     2. Start utilizing         2. stole data/records  
+
+(Only virus deletes)     CPU and RAM Memory.
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+Rootkit: Closely associated to malware, not a malware, provides space for malwares to hide into the system. Supportive part to a malware. Patch only done at h/w
+     
+         level.
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+******************************************************************************************************************************************************************
+
+Steganography: Hide any file behind any extensions.
+
+******************************************************************************************************************************************************************
+
+
+Sniffing works in L2, Switches
+
+
+CISCO Discovery Protocol
+
+Victims Machine: 
+IP                
+Gateway
+Subnet
+
+
+Http: 
+             
+
+Https(SSL)
+Drawback: SSLStripping/ SSLPinning
+
+HTTPS(TLS)
+
+
+
+
+
+

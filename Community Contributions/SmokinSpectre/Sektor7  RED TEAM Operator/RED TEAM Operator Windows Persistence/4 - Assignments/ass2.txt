@@ -1,0 +1,6 @@
+ 
+Difficulty: LOW
+
+Add all missing functions to winspool.drv hijacking DLL.
+
+Hint: develop dumpbin output parsing script (or find something already existing)

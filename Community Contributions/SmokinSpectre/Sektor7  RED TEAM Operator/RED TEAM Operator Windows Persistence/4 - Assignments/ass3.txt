@@ -1,0 +1,5 @@
+Difficulty: MEDIUM
+
+Create WMI Eventing persistence which is triggered by system start.
+
+Hint: Check MSDN documentation - here(https://docs.microsoft.com/en-us/windows/win32/cimwin32prov/win32-process) and here(https://docs.microsoft.com/en-us/windows/win32/cimwin32prov/operating-system-classes) 

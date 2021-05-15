@@ -1,0 +1,4 @@
+(optional)
+Develop C/C++ version of cms.ps1 as a standalone DLL.
+
+Tip: use code templates from DLL-hijack folder

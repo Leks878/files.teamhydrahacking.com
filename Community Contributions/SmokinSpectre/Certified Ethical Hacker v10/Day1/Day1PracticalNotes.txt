@@ -1,0 +1,109 @@
+###########################################################################
+                                                                          #
+                          DAY 1 Practical Deep Dive                       #
+                                                                          #
+###########################################################################
+Vulnerability: 
+
+Probability of exploiting an threat. 
+
+
+if (Exploit and Payload succeeded than it becomes an attack)
+RedTeam , BlueTeam(75% of VA)
+Exploit : Peice of code to gain access to system.
+Payload : Post to Exploit. (Antivirus)
+
+VA----->Exploit-------->Payload
+
+###########################################################################
+VA                #            Exploit               #       Payload      #  
+###########################################################################
+Wanna Cry         #         SMB-445                  #     Encrypt        #
+Patch MS17-010    #         v1,v2                    #                    #
+###########################################################################  
+
+Advance Tech Protection : .exe/.jar/.py not allowed as email attachment.
+                          .zip / can be scanned. 
+     Hackers Prospective: .zip / under zip, html(contains link to download)
+
+ZeroDay Attack: Only attackers have the knowledge of it, not the victim
+                or the vendor. 
+
+############################################################################
+Researcher           #    Government                 #  BlackHat           #
+(White Hat)          #                               #                     #
+############################################################################
+BugBounty            #    NSA                        #  Sell it to govt.   #
+--> Vendor           #    NK                         #                     #
+############################################################################
+
+Now all the BH guys got hired by Govt. 
+
+Daisy Chaining:
+
+Doxing: Documentation and Boxing. Case of Edward Snowden  
+
+Bot  : A simple program to provide automate something. It will get spread to
+       some network known as botnet.
+
+############################################################################
+
+Confidentiality:
+Trust Factor. Confidence on using a s/w, apps.
+Integrity:
+Data should not me tampered in the intermediatry steps. 
+
+GAK: Govt. Access Key. 
+
+Availability:
+
+#############################################################################
+                                                                            #
+Types Of Hacker.                                                            #
+                                                                            #
+#############################################################################
+
+Phases:
+
+Recoassiance/ Footprint takes most time compared to other.
+
+Scanning (pre phase attack).
+
+After including Scanning may be treated as Illegal.
+
+Gaining Access: Penetrate to network.
+
+Maintaining Access:  Obsolete now a days. One time now a days.
+
+Covering Tracks: Clearing all logs files.
+
+############################################################################
+                                                                           #
+ISOCertified                                                               #
+                                                                           #
+############################################################################
+                                                                           #
+For doing business,                                                        # 
+                                                                           #
+Describe or document Security mechanisms.                                  #
+                                                                           #
+Demands which softwares to use.                                            #
+                                                                           #
+############################################################################
+                                                                          
+
+PCIDSS
+
+Deals with security policies, only when dealing with Payment gateways.
+
+Hippa
+
+Deals with security policies, only when dealing with Patient Informations.
+
+FISMA
+
+############################################################################
+
+Security Testing Methodologies
+
+
